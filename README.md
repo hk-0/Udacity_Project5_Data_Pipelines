@@ -111,13 +111,7 @@ The data model is implemented using a star schema. The schema contains two stagi
 
 ## File Structure And Description
 
-```.
-
-├── dl.cfg (config file that contains the AWS keys)
-├── etl.py (etl.py loads data from S3 into staging tables on Redshift and then process that data into the analytics tables on Redshift )
-├── README.md
-
-
+```
 .
 └── airflow
     ├── dags
