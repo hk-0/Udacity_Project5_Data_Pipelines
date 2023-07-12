@@ -8,9 +8,6 @@ class LoadFactOperator(BaseOperator):
 
     @apply_defaults
     def __init__(self,
-                 # Define your operators params (with defaults) here
-                 # Example:
-                 # conn_id = your-connection-name
                  redshift_conn_id = "",
                  target_db = "",
                  destination_table = "",
@@ -18,9 +15,6 @@ class LoadFactOperator(BaseOperator):
                  *args, **kwargs):
 
         super(LoadFactOperator, self).__init__(*args, **kwargs)
-        # Map params here
-        # Example:
-        # self.conn_id = conn_id
         self.redshift_conn_id = redshift_conn_id
         self.target_db = target_db
         self.destination_table = destination_table
